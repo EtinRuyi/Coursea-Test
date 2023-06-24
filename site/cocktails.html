@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ogoh's Cuisine</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/restaurant-logo.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img" alt="logo image"></div>
+            </a>
+
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Ogoh's Cuisine</h1></a>
+              <p>
+                <img
+                  src="images/star-logo.png"
+                  alt="k-certification"
+                  style="height: 25px; width: 25px"
+                />
+                <span>Kosher Certified</span>
+              </p>
+            </div>
+
+            <button
+              id="navbarToggle"
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li class="visible-xs">
+                <a href="index.html">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
+                      /></svg></span
+                  ><br class="hidden-xs" />
+                  Home</a
+                >
+              </li>
+              <li class="active">
+                <a href="menu-categories.html">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 1408 1792"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M640 64v640q0 61-35.5 111T512 885v779q0 52-38 90t-90 38H256q-52 0-90-38t-38-90V885q-57-20-92.5-70T0 704V64q0-26 19-45T64 0t45 19t19 45v416q0 26 19 45t45 19t45-19t19-45V64q0-26 19-45t45-19t45 19t19 45v416q0 26 19 45t45 19t45-19t19-45V64q0-26 19-45t45-19t45 19t19 45zm768 0v1600q0 52-38 90t-90 38h-128q-52 0-90-38t-38-90v-512H800q-13 0-22.5-9.5T768 1120V320q0-132 94-226t226-94h256q26 0 45 19t19 45z"
+                      /></svg></span
+                  ><br class="hidden-xs" />
+                  Menu</a
+                >
+              </li>
+              <li>
+                <a href="about.html">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1Zm-.5 5a1 1 0 1 0 0 2h.5a1 1 0 1 0 0-2h-.5ZM10 10a1 1 0 1 0 0 2h1v3h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-4a1 1 0 0 0-1-1h-2Z"
+                        clip-rule="evenodd"
+                      /></svg></span
+                  ><br class="hidden-xs" />
+                  About</a
+                >
+              </li>
+              <li>
+                <a href="awards.html">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 1536 1536"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m1376 768l138 135q30 28 20 70q-12 41-52 51l-188 48l53 186q12 41-19 70q-29 31-70 19l-186-53l-48 188q-10 40-51 52q-12 2-19 2q-31 0-51-22l-135-138l-135 138q-28 30-70 20q-41-11-51-52l-48-188l-186 53q-41 12-70-19q-31-29-19-70l53-186l-188-48q-40-10-52-51q-10-42 20-70l138-135L22 633q-30-28-20-70q12-41 52-51l188-48l-53-186q-12-41 19-70q29-31 70-19l186 53l48-188q10-41 51-51q41-12 70 19l135 139L903 22q29-30 70-19q41 10 51 51l48 188l186-53q41-12 70 19q31 29 19 70l-53 186l188 48q40 10 52 51q10 42-20 70z"
+                      /></svg></span
+                  ><br class="hidden-xs" />
+                  Awards</a
+                >
+              </li>
+              <li id="phone" class="hidden-xs">
+                <a href="tel:+2347036446342"> <span>+2347036446342</span></a>
+                <div>We Deliver</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="call-btn" class="visible-xs">
+      <a class="btn" href="tel:+2347036446342">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m21 15.46l-5.27-.61l-2.52 2.52a15.045 15.045 0 0 1-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z"
+            />
+          </svg>
+        </span>
+        +2347036446342
+      </a>
+    </div>
+    <div id="xs-deliver" class="text-center visible-xs">We Deliver</div>
+
+    <div id="main-content" class="container">
+      <h2 id="menu-categories-title" class="text-center">Cocktails Menu</h2>
+      <div class="text-center">
+        Have a feel from our funky and delightsome cocktails, explore and enjoy.
+      </div>
+
+      <section class="row">
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT01</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT02</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+        <!-- Add after every 2nd menu-item-tile -->
+        <div class="clearfix visible-lg-block visible-md-block"></div>
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT03</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT04</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+        <!-- Add after every 2nd menu-item-tile -->
+        <div class="clearfix visible-lg-block visible-md-block"></div>
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT05</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT06</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+        <!-- Add after every 2nd menu-item-tile -->
+        <div class="clearfix visible-lg-block visible-md-block"></div>
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT07</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT08</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+
+        <div class="clearfix visible-lg-block visible-md-block"></div>
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT09</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>CT10</div>
+                <img
+                  class="img-responsive"
+                  width="250"
+                  height="150"
+                  src="images/COCKTAIL1.jpg"
+                  alt="Item"
+                />
+              </div>
+              <div class="menu-item-price">
+                N1,500<span> (pint)</span> $14.95 <span>(quart)</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Amala with Mixed Vegetables</h3>
+              <p class="menu-item-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                inventore esse minima incidunt impedit. Asperiores, voluptatem.
+                Sint aspernatur provident, rem odio dolorem eaque voluptatibus
+                modi reprehenderit minima, itaque cupiditate totam.
+              </p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>
+
+        <div class="clearfix visible-lg-block visible-md-block"></div>
+      </section>
+    </div>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br />
+            Mon-Sat: 08:00am - 09:00pm<br />
+            Sunday: 09:30am - 11:59pm<br />
+            Always Open!!!
+            <hr class="visible-xs" />
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br />
+            Opposite University of, Uselu 333010, Benin City, Edo State
+            <p>
+              * Dine-in, * Takeaway, * Home delevry with minimum order of #5,000
+              plus #1,500 charge for all deliveries.
+            </p>
+            <hr class="visible-xs" />
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>
+              "The best Cuisine restaurant I've been to! And that's saying a
+              lot, since I've been to many!" <br />
+              <br />
+              -Henry
+            </p>
+            <p>
+              "Amazing food! Great service! Couldn't ask for more! I'll be back
+              again and again!" <br />
+              <br />
+              -Jammine
+            </p>
+          </section>
+        </div>
+        <div class="text-center">
+          &copy; Copyright Ogoh's Cuisine 2023 | Ruyi Group
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.0/iconify.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
